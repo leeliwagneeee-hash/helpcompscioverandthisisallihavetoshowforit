@@ -1,0 +1,115 @@
+body {
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #FFFFF0 0%, #FFD8C2 100%);
+  color: #1E3A5F;
+}
+
+header {
+  background: linear-gradient(135deg, #637a8c 0%, #E1E4ED 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.4em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.7em;
+  margin-top: 8px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: linear-gradient(160deg, #7E95AB 0%, #E1E4ED 100%);
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 340px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  background: #637a8c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f6673;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 80%;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hidden-game {
+  background: #F8F9FB;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+a {
+  color: #1E3A5F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  .card {
+    flex: 1 1 40%;
+  }
+}
