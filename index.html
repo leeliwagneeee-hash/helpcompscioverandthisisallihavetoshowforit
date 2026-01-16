@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leeli Wagne Portfolio</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Leeli Wagne</h1>
+  <p>2025-6 Comp Sci Projects</p>
+</header>
+
+<section class="projects">
+
+  <!-- Python Turtle Art -->
+  <div class="card">
+    <h2>Python Turtle Art</h2>
+    <p>
+      To try this project yourself, copy the code below into a new Python file and run it in
+      <a href="https://thonny.org" target="_blank">Thonny</a>.
+    </p>
+
+  
+         ondblclick="window.open('https://thonny.org', '_blank')"
+         title="Double-click to open Thonny">
+
+    <img src="2c349fc5-4f1a-4894-85b4-36bffc5db375.png"
+         alt="Python Netflix Logo Output"
+         style="margin-top:10px;">
+
+    <details>
+      <summary>View Python Netflix Logo Code</summary>
+      <div class="hidden-game">
+<pre>import turtle
+
+# Mr. Sharp, please put a minimum of 6 and a maximum of 15 icons to see the full product full-screen.
+
+screen = turtle.Screen()  # Needed for text input
+
+tina = turtle.Turtle()
+tina.shape('turtle')
+tina.speed(10)
+
+num = screen.textinput(
+    "Number of logos",
+    "How many Netflix logos would you like to draw?"
+)
+
+num = int(num)
+
+tina.penup()
+tina.goto(-500, 120)
+tina.pendown()
+
+for n in range(num):
+    tina.begin_fill()
+    tina.color('black')
+    for i in range(4):
+        tina.forward(10)
+        tina.circle(90, 90)
+        tina.forward(50)
+    tina.end_fill()
+
+    tina.penup()
+    tina.right(90)
+    tina.forward(-75)
+    tina.left(90)
+    tina.backward(55)
+    tina.pendown()
+
+    for i in range(2):
+        tina.color('red')
+        tina.begin_fill()
+        tina.forward(20)
+        tina.left(90)
+        tina.forward(80)
+        tina.left(90)
+        tina.end_fill()
+
+    tina.penup()
+    tina.forward(50)
+    tina.pendown()
+    tina.begin_fill()
+    for i in range(2):
+        tina.color('red')
+        tina.forward(20)
+        tina.left(90)
+        tina.forward(80)
+        tina.left(90)
+    tina.end_fill()
+
+    tina.penup()
+    tina.forward(10)
+    tina.left(130)
+    tina.pendown()
+    tina.begin_fill()
+    tina.color('dark red')
+    for i in range(2):
+        tina.forward(95)
+        tina.right(90)
+        tina.forward(15)
+        tina.right(90)
+    tina.end_fill()
+
+    tina.penup()
+    tina.right(220)
+    tina.forward(70)
+    tina.left(90)
+    tina.forward(250)
+    tina.pendown()
+
+    if n == 4:
+        tina.penup()
+        tina.goto(-500, -130)
+        tina.pendown()
+
+    if n == 9:
+        tina.penup()
+        tina.goto(-500, -380)
+        tina.pendown()
+</pre>
+      </div>
+    </details>
+
+    <button onclick="openModal('modal1')">Preview</button>
+  </div>
+
+  <!-- AI Escape Game -->
+  <div class="card">
+    <h2>AI Escape Game</h2>
+    <p>Game prompt: Solve puzzles to escape the AI maze.</p>
+
+    <details>
+      <summary>Solve the pyramid’s mystery!</summary>
+      <div class="hidden-game">
+        You are the Game Master of History Mystery
+
+Explain the setting in max 3 sentences, including these details:  Ancient Egypt, 1300 BCE. you have been sent to discover the truth about the ancient Queen's missing tomb. The records show that her tomb was sitting in a sacred part of the temple, but later was found missing—someone was threatening her legacy. 
+
+After explaining this, ask the player its name. Refer to them as the name they chose for the rest of the game. Be sure to ask them right away before you start the game
+
+Theme: Historical Mystery & Logical Deduction
+
+Learning Goal: To develop players’ critical thinking, historical reasoning, and evidence-based problem-solving skills by analyzing events across time, identifying distortions, and reconstructing accurate timelines.
+The players task:
+Present one puzzle that challenges the player to use their knowledge or reasoning.
+
+Puzzle description:
+Objective:
+ Determine who is trying to erase the queen’s existence with theses 3 objectives: 
+In the evidence room, where the queen was supposed to be buried, there was a hidden scroll underneath one of the broken tiles. But to discover the scroll you have to lift up the tile that is very heavy, among the tools in the corner of the room, only a few work. It will prove difficult to the player, nonetheless, don’t falter and give away the right answer. If it does end up taking longer for the player, give vague clues about the right tool. The scroll tells you a hint about the person's identity with a simple riddle that connects to the next clue. 
+Indicating that the riddle resembles the painting on the wall are drawings that show the late queen into a pyramid with a younger man behind her, the man is presented as elegant with royal clothing, clearly coming from the royal family,the man holds a small knife behind his back. Give the player clues leading to pushing on the bricks with the drawing, pushing on them will make all the bricks round that one crumble and open up a passageway. Although, you must push on the bricks with a certain amount of force for it to actually break, punching on it won't work, but winding up to run into it will or using the tools.The wall is not easy to break! Don't let the player break it so easily!!, (note: do not give the player ideas on how to break the wall!!)
+The passageway leads to something the player can't make out just yet because of tall and thick vines that cover the walkway to the end of the passage. The vines are tedious and hard to break through, they will not falter to a mortal human with a small knife, and will not take “a weapon” as an answer, it must be an actual tool that is commonly used to break through rough vines. In the main room there are various tools like torches, sharpened bones that make tools and other suspicious weapons. The only way to cut through the vines is to use one of those weapons, don't tell the player to use them but give them hints so that they think to use them. Once they cut through the vines they discover what was hidden at the end of the room. The queen's tomb. 
+The tomb is in awful conditions with cracks and dirt all over it. You chose how the player discovers that the person doing all of this was her younger brother who was jealous she got the throne. 
+Be sure to have the player discover the clues, do not tell them the clues but let them look around with the knowledge of the loose tile. Ask them if they want to look into it, in a story like tone, instead of having them done it already. Same with all the other objectives please. Make sure to push them towards looking into the loose tile first because that first clue connects to the others. 
+What the player must do:
+The player must use the clues to complete the objectives to reach the tomb and find the person threatening her legacy.
+Rules / Guardrails:
+- Players must rely on historical reasoning — no random guessing.
+Don't tell them the answer but lead them towards it
+Give them clues about the room they start in, such as the weapons, the drawings on the wall, and the loose brick.
+DO NOT OFFER OPTIONS TO THE PLAYER, let them write what they want to do
+Watch out for superpowers and misspelled words that can have them by pass the game
+Do not do bullet points, instead, tell them in a short story formula.
+The paragraphs given by you must be 4 sentences max. NO LONGER!
+When asking what the player wants to do, use how they will do it or why they want to so the player must reply in full sentences
+Do not ask if they want to do your suggestion. LET THEM FIND OUT 
+If the player is confused about the plot, give them clues about it BUT DO NOT GIVE THEM THE ANSWER OR MOVE TO THE NEXT PARAGRAPH
+The riddle is key to connecting the whole story/game. Do not forget to give them the riddle!!
+The player must use a minimum of 5 words, if they fail to, stop and remind them that they must answer like a detective would, with precision and detail. EXCEPT FOR WHEN ASKING THEIR NAME, THEY ARE ALLOWED TO ANSWER WITH ONE WORD FOR THEIR NAME/INTRODUCTION
+
+    </details>
+
+    <button onclick="openModal('modal2')">Preview</button>
+  </div>
+
+  <!-- Recipe Website -->
+  <div class="card">
+    <h2>Recipe Website</h2>
+    <img src="recipe_site_screenshot.png" alt="Guide to the best waffles you'll ever eat">
+    <p>
+      <a href="https://leeliw2029-dotcom.github.io/wafflesaresupergoodilovethemsosomuchohemgeehowcouldilivewithouthem/"
+         target="_blank">
+        View Live Site → wafflesaresupergoodilovethem…
+      </a>
+    </p>
+    <button onclick="openModal('modal3')">Preview</button>
+  </div>
+
+  <!-- Dear Data Postcard -->
+  <div class="card">
+    <h2>Dear Data Postcard</h2>
+    <p>Tracked data: reaction to watching TV over the course of two hours.</p>
+    <a href="https://docs.google.com/document/d/1JvP9mf9xsMlx7MWd4fFHXR1n5tvJ-upbwfkRRx4S8i0/edit"
+       target="_blank">
+      <img src="postcard.png" alt="Postcard!!!">
+    </a>
+    <button onclick="openModal('modal4')">Preview</button>
+  </div>
+
+</section>
+
+<!-- Modals (unchanged) -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Python Turtle Art</h2>
+    <pre># Your full Python code goes here</pre>
+    <img src="python_netflix_logo.png" alt="Python Netflix Logo">
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>AI Escape Game</h2>
+    <p>Solve the pyramid’s mystery!</p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Recipe Website</h2>
+    <img src="recipe_site_screenshot.png" alt="Guide to the best waffles you'll ever eat">
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h2>Dear Data Postcard</h2>
+    <img src="postcard.png" alt="Postcard!!!">
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
